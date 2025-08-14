@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 // Homepage
@@ -10,4 +11,5 @@ Route::get('/', function () {
 
 // Add customer page
 Route::resource('customers', CustomerController::class);
+Route::get('/services/more', [ServiceController::class, 'more'])->name('services.more');
 

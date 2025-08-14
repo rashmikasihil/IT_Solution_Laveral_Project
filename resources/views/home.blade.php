@@ -69,6 +69,10 @@
             background-color: #d8e0ed;
             border-radius: 10px;
         }
+        .btns{
+            background-color: #ffc107;
+            border-color: #ffc107;
+        }
 
     </style>
 </head>
@@ -120,6 +124,54 @@
         Your success is our priority, and innovation is at our core.
     </p>
 </section>
+<hr>
+   <!-- Services Section -->
+<section id="services" class="container py-5">
+    <h2 class="section-title text-center">
+    <i class="fas fa-cogs me-2"></i>Our Services
+</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card p-3">
+                <img src="https://th.bing.com/th/id/R.914496ca2dd667c6d0a6e44ce7bc3657?rik=xW0trgwt%2f3CKrQ&riu=http%3a%2f%2falignminds.com%2fwp-content%2fuploads%2f2023%2f03%2fAlignminds-Blog-Banner-24.jpg&ehk=BD%2fwBHqPPr1JBrVP0b2gRcy%2flmB1%2b9hYtvbJM2eaWYM%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="Web Development">
+                <div class="card-body">
+                    <h5 class="card-title">Web Development</h5>
+                    <p class="card-text">Building modern and responsive websites for all devices using latest technologies.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-3">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.eMbcAAcqJxicjsqOg1FZygHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Cloud Solutions">
+                <div class="card-body">
+                    <h5 class="card-title">Cloud Solutions</h5>
+                    <p class="card-text">Scalable cloud-based infrastructure and hosting services for your business growth.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-3">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.8JT_vfpu9aVBG2C3LslKoAHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="IT Consultancy">
+                <div class="card-body">
+                    <h5 class="card-title">IT Consultancy</h5>
+                    <p class="card-text">Expert guidance on technology adoption, project planning, and software implementation.</p>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+<p>
+We provide innovative IT solutions tailored to your business needs. Our services include web development,
+ mobile applications, cloud solutions, and IT consultancy. With skilled professionals and modern technologies, 
+ we ensure reliable, scalable, and efficient solutions that help businesses grow, optimize processes, and achieve long-term success.
+</p>
+
+    <!-- More Services Button -->
+    <div class="text-center mt-4">
+        <a href="{{ route('services.more') }}" class="btn btns btn-success btn-lg">
+            <i class="fas fa-plus-circle me-2"></i> More Services
+        </a>
+    </div>
+</section>
 
     <!-- Awards Section -->
 <section id="awards" class="container py-5">
@@ -149,47 +201,17 @@
     </div>
 </section>
 
-    <!-- Services Section -->
-    <section id="services" class="container py-5">
-        <h2 class="section-title">Our Services</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <img src="https://th.bing.com/th/id/R.914496ca2dd667c6d0a6e44ce7bc3657?rik=xW0trgwt%2f3CKrQ&riu=http%3a%2f%2falignminds.com%2fwp-content%2fuploads%2f2023%2f03%2fAlignminds-Blog-Banner-24.jpg&ehk=BD%2fwBHqPPr1JBrVP0b2gRcy%2flmB1%2b9hYtvbJM2eaWYM%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="Web Development">
-                    <div class="card-body">
-                        <h5 class="card-title">Web Development</h5>
-                        <p class="card-text">Building modern and responsive websites for all devices using latest technologies.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <img src="https://tse1.mm.bing.net/th/id/OIP.eMbcAAcqJxicjsqOg1FZygHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Cloud Solutions">
-                    <div class="card-body">
-                        <h5 class="card-title">Cloud Solutions</h5>
-                        <p class="card-text">Scalable cloud-based infrastructure and hosting services for your business growth.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <img src="https://tse3.mm.bing.net/th/id/OIP.8JT_vfpu9aVBG2C3LslKoAHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="IT Consultancy">
-                    <div class="card-body">
-                        <h5 class="card-title">IT Consultancy</h5>
-                        <p class="card-text">Expert guidance on technology adoption, project planning, and software implementation.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr>
-
     <!-- Customer Section -->
 <section id="customers" class="container py-5 text-center">
+    <div class="mb-4">
+        <img src="https://th.bing.com/th/id/R.997f6a5f7582f4cb5920b3cb385b7435?rik=LgMflO%2b4a1f%2fbA&riu=http%3a%2f%2fwww.newdesignfile.com%2fpostpic%2f2011%2f11%2fcustomer-icons-people_357588.png&ehk=1hQ3x7D2CpRZOBNYzS5m7F%2fTXzOnWm5cRnszwvNwCTk%3d&risl=&pid=ImgRaw&r=0" 
+             alt="Company Logo" 
+             style="width: 150px; height: 150px;">
+    </div>
     <h2 class="section-title">
         <i class="fas fa-users me-2"></i> <!-- Customer icon added -->
+        Customer Management
     </h2>
-    <h2> Customer Management</h2>
     <p>Manage your customers effectively with our integrated system.</p>
     <a href="{{ route('customers.create') }}" class="btn btn-primary btn-lg">
         <i class="fas fa-user-plus me-1"></i> Add Customer
@@ -213,6 +235,12 @@
             Today, we continue to push the boundaries of what technology can achieve,
             staying ahead of industry trends and delivering solutions that matter.
         </p>
+    </div>
+    <!-- More Services Button -->
+    <div class="text-center mt-4">
+        <a href="{{ route('services.more') }}" class="btn btns btn-success btn-lg">
+            <i class="fas fa-plus-circle me-2"></i> More Services
+        </a>
     </div>
     </div>
 </section>
