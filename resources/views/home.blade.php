@@ -107,15 +107,15 @@
 <section id="about" class="container py-5 text-center">
     <!-- Company Logo -->
      <div class="mb-4">
-        <img src="https://www.kindpng.com/picc/m/455-4557320_diseno-web-web-development-logo-transparent-background-hd.png" 
+        <img src="https://logodix.com/logo/1245962.jpg" 
              alt="Company Logo" 
              style="width: 150px; height: 150px;">
     </div>
 
-    <h2 class="section-title">
-        <i class="fas fa-building me-2"></i> <!-- Building icon added -->
+    <!-- <h2 class="section-title">
+        <i class="fas fa-building me-2"></i>
         About Us
-    </h2>
+    </h2> -->
 
     <p class="text-center">
         We are a forward-thinking IT solutions company dedicated to delivering innovative, reliable, and scalable technology services. Our mission is to empower businesses with cutting-edge digital solutions that drive growth,
@@ -124,7 +124,45 @@
         Your success is our priority, and innovation is at our core.
     </p>
 </section>
-<hr>
+
+<!-- Feature Bar -->
+<section class="feature-bar py-4 bg-light text-center">
+    <div class="container">
+        <div class="row">
+            <!-- Delivery -->
+            <div class="col-6 col-md-2">
+                <i class="fas fa-truck fa-2x mb-2"></i>
+                <p>Delivery</p>
+            </div>
+            <!-- Packaging -->
+            <div class="col-6 col-md-2">
+                <i class="fas fa-box-open fa-2x mb-2"></i>
+                <p>Packaging</p>
+            </div>
+            <!-- Sales -->
+            <div class="col-6 col-md-2">
+                <i class="fas fa-tags fa-2x mb-2"></i>
+                <p>Sales</p>
+            </div>
+            <!-- Support -->
+            <div class="col-6 col-md-2">
+                <i class="fas fa-headset fa-2x mb-2"></i>
+                <p>Support</p>
+            </div>
+            <!-- Secure Payment -->
+            <div class="col-6 col-md-2">
+                <i class="fas fa-lock fa-2x mb-2"></i>
+                <p>Secure Payment</p>
+            </div>
+            <!-- Store -->
+            <div class="col-6 col-md-2">
+                <i class="fas fa-store fa-2x mb-2"></i>
+                <p>Store</p>
+            </div>
+        </div>
+    </div>
+</section>
+
    <!-- Services Section -->
 <section id="services" class="container py-5">
     <h2 class="section-title text-center">
@@ -216,6 +254,9 @@ We provide innovative IT solutions tailored to your business needs. Our services
     <a href="{{ route('customers.create') }}" class="btn btn-primary btn-lg">
         <i class="fas fa-user-plus me-1"></i> Add Customer
     </a>
+   <a href="{{ route('customers.index') }}" class="btn btn-primary btn-lg">
+    <i class="fas fa-eye me-1"></i> View Customer
+    </a>
 </section>
 
     <!-- Company History Section -->
@@ -239,31 +280,52 @@ We provide innovative IT solutions tailored to your business needs. Our services
     <!-- More Services Button -->
     <div class="text-center mt-4">
         <a href="{{ route('services.more') }}" class="btn btns btn-success btn-lg">
-            <i class="fas fa-plus-circle me-2"></i> More Services
+            <i class="fas fa-plus-circle me-2"></i> More Details
         </a>
     </div>
     </div>
 </section>
 
 <!-- Owners Section -->
-<section class="py-5 bg-light" id="owners">
+<section class="py-5" id="owners" style="background: linear-gradient(to right, #f8f9fa, #ffffff);">
     <div class="container">
-        <h2 class="text-center mb-4">Meet Our Leadership</h2>
-        <div class="row g-4">
-            <div class="col-md-4 text-center">
-                <img src="https://tse1.explicit.bing.net/th/id/OIP.DZ66-HVJ2HSKhOKAKi3RuQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" class="rounded-circle mb-3" alt="Owner 1">
-                <h5>John Smith</h5>
-                <p>Founder & CEO</p>
+        <h2 class="text-center mb-5" style="font-weight: bold; color: #333;">Meet Our Leadership</h2>
+        <div class="row g-4 text-center justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-md-3">
+                <div class="card shadow-lg border-0 rounded-4 p-3 h-100">
+                    <img src="https://tse1.explicit.bing.net/th/id/OIP.DZ66-HVJ2HSKhOKAKi3RuQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" 
+                         class="rounded-circle mx-auto" alt="Owner 1" style="width: 180px; height: 180px; object-fit: cover; border: 5px solid #fff; box-shadow: 0px 4px 15px rgba(0,0,0,0.1);">
+                    <h5 class="mt-3 mb-1" style="color: #2c3e50;">John Smith</h5>
+                    <p style="color: #777;">Founder & CEO</p>
+                </div>
             </div>
-            <div class="col-md-4 text-center">
-                <img src="https://th.bing.com/th/id/OIP.ZajNaIrT8TN-OhGLoKzZFwHaKE?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="rounded-circle mb-3" alt="Owner 2">
-                <h5>Sarah Johnson</h5>
-                <p>Co-Founder & CTO</p>
+            <!-- Card 2 -->
+            <div class="col-md-3">
+                <div class="card shadow-lg border-0 rounded-4 p-3 h-100">
+                    <img src="https://th.bing.com/th/id/OIP.ZajNaIrT8TN-OhGLoKzZFwHaKE?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                         class="rounded-circle mx-auto" alt="Owner 2" style="width: 180px; height: 180px; object-fit: cover; border: 5px solid #fff; box-shadow: 0px 4px 15px rgba(0,0,0,0.1);">
+                    <h5 class="mt-3 mb-1" style="color: #2c3e50;">Sarah Johnson</h5>
+                    <p style="color: #777;">Co-Founder & CTO</p>
+                </div>
             </div>
-            <div class="col-md-4 text-center">
-                <img src="https://i5.walmartimages.com/seo/KingSize-Men-s-Big-Tall-Easy-Movement-Two-Button-Jacket_87fb61b0-6d02-4c14-b7bd-ebf4d9552a41_1.0d95cfe3b976bd433247f2cf3e9634b2.jpeg?odnHeight=573&odnWidth=573&odnBg=FFFFFF" class="rounded-circle mb-3" alt="Owner 3">
-                <h5>David Brown</h5>
-                <p>COO</p>
+            <!-- Card 3 -->
+            <div class="col-md-3">
+                <div class="card shadow-lg border-0 rounded-4 p-3 h-100">
+                    <img src="https://i5.walmartimages.com/seo/KingSize-Men-s-Big-Tall-Easy-Movement-Two-Button-Jacket_87fb61b0-6d02-4c14-b7bd-ebf4d9552a41_1.0d95cfe3b976bd433247f2cf3e9634b2.jpeg?odnHeight=573&odnWidth=573&odnBg=FFFFFF" 
+                         class="rounded-circle mx-auto" alt="Owner 3" style="width: 180px; height: 180px; object-fit: cover; border: 5px solid #fff; box-shadow: 0px 4px 15px rgba(0,0,0,0.1);">
+                    <h5 class="mt-3 mb-1" style="color: #2c3e50;">David Brown</h5>
+                    <p style="color: #777;">COO</p>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-3">
+                <div class="card shadow-lg border-0 rounded-4 p-3 h-100">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.MGISaMcCLwWgHrHHxt4Q7AHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" 
+                         class="rounded-circle mx-auto" alt="Owner 4" style="width: 180px; height: 180px; object-fit: cover; border: 5px solid #fff; box-shadow: 0px 4px 15px rgba(0,0,0,0.1);">
+                    <h5 class="mt-3 mb-1" style="color: #2c3e50;">Elina Samuel</h5>
+                    <p style="color: #777;">Owner</p>
+                </div>
             </div>
         </div>
     </div>
