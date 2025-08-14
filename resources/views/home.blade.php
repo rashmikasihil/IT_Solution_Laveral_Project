@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Solutions Company - Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -49,6 +50,22 @@
             width: 100%;
             height: 174px;
         }
+        .section-title {
+            font-weight: bold;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .award-box {
+            background-color: #f8f9fa;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+        }
+        .award-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        }
+
     </style>
 </head>
 <body>
@@ -82,10 +99,41 @@
     <section id="about" class="container py-5">
         <h2 class="section-title">About Us</h2>
         <p class="text-center">
-            We are a leading IT solutions provider, offering software development, cloud solutions, web design, and IT consultancy.
-            Our expert team ensures that every client receives the best technology services tailored to their needs.
+            We are a forward-thinking IT solutions company dedicated to delivering innovative, reliable, and scalable technology services. Our mission is to empower businesses with cutting-edge digital solutions that drive growth,
+             efficiency, and long-term success. With a passionate team of skilled professionals, we specialize in software development, web and mobile applications, cloud integration, 
+             and IT consultancy. We believe in building strong relationships with our clients through transparency, quality, and commitment. From startups to large enterprises, we help organizations embrace digital transformation and stay ahead in today’s fast-changing technological landscape.
+              Your success is our priority, and innovation is at our core.
         </p>
     </section>
+
+    <!-- Awards Section -->
+<section id="awards" class="container py-5">
+    <h2 class="section-title text-center">Our Achievements & Awards</h2>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="award-box p-4 shadow-sm rounded">
+                <i class="fas fa-trophy fa-3x text-warning mb-3"></i>
+                <h4>Best Innovation Award</h4>
+                <p>Recognized for delivering cutting-edge solutions in the tech industry.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="award-box p-4 shadow-sm rounded">
+                <i class="fas fa-medal fa-3x text-primary mb-3"></i>
+                <h4>Excellence in Software Development</h4>
+                <p>Awarded for outstanding performance in software development projects.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="award-box p-4 shadow-sm rounded">
+                <i class="fas fa-award fa-3x text-success mb-3"></i>
+                <h4>Customer Choice Award</h4>
+                <p>Voted by clients for exceptional customer service and support.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- Services Section -->
     <section id="services" class="container py-5">
