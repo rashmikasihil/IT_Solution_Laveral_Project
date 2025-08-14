@@ -65,6 +65,10 @@
             transform: translateY(-5px);
             box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
         }
+        #awards{
+            background-color: #d8e0ed;
+            border-radius: 10px;
+        }
 
     </style>
 </head>
@@ -96,15 +100,26 @@
     </div>
 
     <!-- About Section -->
-    <section id="about" class="container py-5">
-        <h2 class="section-title">About Us</h2>
-        <p class="text-center">
-            We are a forward-thinking IT solutions company dedicated to delivering innovative, reliable, and scalable technology services. Our mission is to empower businesses with cutting-edge digital solutions that drive growth,
-             efficiency, and long-term success. With a passionate team of skilled professionals, we specialize in software development, web and mobile applications, cloud integration, 
-             and IT consultancy. We believe in building strong relationships with our clients through transparency, quality, and commitment. From startups to large enterprises, we help organizations embrace digital transformation and stay ahead in today’s fast-changing technological landscape.
-              Your success is our priority, and innovation is at our core.
-        </p>
-    </section>
+<section id="about" class="container py-5 text-center">
+    <!-- Company Logo -->
+     <div class="mb-4">
+        <img src="https://www.kindpng.com/picc/m/455-4557320_diseno-web-web-development-logo-transparent-background-hd.png" 
+             alt="Company Logo" 
+             style="width: 150px; height: 150px;">
+    </div>
+
+    <h2 class="section-title">
+        <i class="fas fa-building me-2"></i> <!-- Building icon added -->
+        About Us
+    </h2>
+
+    <p class="text-center">
+        We are a forward-thinking IT solutions company dedicated to delivering innovative, reliable, and scalable technology services. Our mission is to empower businesses with cutting-edge digital solutions that drive growth,
+        efficiency, and long-term success. With a passionate team of skilled professionals, we specialize in software development, web and mobile applications, cloud integration, 
+        and IT consultancy. We believe in building strong relationships with our clients through transparency, quality, and commitment. From startups to large enterprises, we help organizations embrace digital transformation and stay ahead in today’s fast-changing technological landscape.
+        Your success is our priority, and innovation is at our core.
+    </p>
+</section>
 
     <!-- Awards Section -->
 <section id="awards" class="container py-5">
@@ -133,7 +148,6 @@
         </div>
     </div>
 </section>
-
 
     <!-- Services Section -->
     <section id="services" class="container py-5">
@@ -168,18 +182,26 @@
             </div>
         </div>
     </section>
+    <hr>
 
     <!-- Customer Section -->
-    <section id="customers" class="container py-5 text-center">
-        <h2 class="section-title">Customer Management</h2>
-        <p>Manage your customers effectively with our integrated system.</p>
-        <a href="{{ route('customers.create') }}" class="btn btn-primary btn-lg">➕ Add Customer</a>
-    </section>
+<section id="customers" class="container py-5 text-center">
+    <h2 class="section-title">
+        <i class="fas fa-users me-2"></i> <!-- Customer icon added -->
+    </h2>
+    <h2> Customer Management</h2>
+    <p>Manage your customers effectively with our integrated system.</p>
+    <a href="{{ route('customers.create') }}" class="btn btn-primary btn-lg">
+        <i class="fas fa-user-plus me-1"></i> Add Customer
+    </a>
+</section>
 
     <!-- Company History Section -->
 <section class="py-5" id="history">
     <div class="hero-section">
     <div class="container">
+        <h2 class="section-title">
+        <i class="fas fa-history me-2"></i> <!-- History icon added --></h2>
         <h2 class="text-center mb-4">Our Company History</h2>
         <p class="text-center">
             Founded in 2010, our IT company started with a small team of passionate developers 
