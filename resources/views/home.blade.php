@@ -336,14 +336,16 @@ We provide innovative IT solutions tailored to your business needs. Our services
 <section class="py-5 bg-light" id="contact">
     <div class="container">
         <h2 class="text-center mb-4">Contact Us</h2>
-        <form class="w-50 mx-auto">
-            <input type="text" class="form-control mb-3" placeholder="Your Name">
-            <input type="email" class="form-control mb-3" placeholder="Your Email">
-            <textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
+        <form class="w-50 mx-auto" method="POST" action="{{ route('contact.store') }}">
+            @csrf
+            <input type="text" name="name" class="form-control mb-3" placeholder="Your Name" required>
+            <input type="email" name="email" class="form-control mb-3" placeholder="Your Email" required>
+            <textarea name="message" class="form-control mb-3" rows="4" placeholder="Message" required></textarea>
             <button class="btn btn-primary w-100">Send Message</button>
         </form>
     </div>
 </section>
+
 
     <!-- Footer -->
     <footer>
