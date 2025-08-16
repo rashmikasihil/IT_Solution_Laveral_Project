@@ -3,6 +3,7 @@
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 
 // Homepage
 Route::get('/', function () {
@@ -12,4 +13,5 @@ Route::get('/', function () {
 // Add customer page
 Route::resource('customers', CustomerController::class);
 Route::get('/services/more', [ServiceController::class, 'more'])->name('services.more');
+Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
 
