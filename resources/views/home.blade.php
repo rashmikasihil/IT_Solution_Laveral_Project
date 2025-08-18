@@ -346,6 +346,47 @@ We provide innovative IT solutions tailored to your business needs. Our services
     </div>
 </section>
 
+<!-- Chatbot Button -->
+<div id="chatbot-container" style="position: fixed; bottom: 20px; right: 20px;">
+    <button id="chatbot-btn" style="padding: 12px 20px; background:#007bff; color:#fff; border:none; border-radius:50%;">
+        💬
+    </button>
+</div>
+
+<!-- Chatbot Box -->
+<div id="chatbot-box" style="display:none; position:fixed; bottom:80px; right:20px; width:300px; height:400px; background:#fff; border:1px solid #ccc; border-radius:10px; overflow:hidden;">
+    <div style="background:#007bff; color:#fff; padding:10px;">Chat with Us</div>
+    <div id="chatbot-messages" style="height:300px; overflow-y:auto; padding:10px;"></div>
+    <input id="chatbot-input" type="text" placeholder="Type a message..." style="width:100%; border:none; padding:10px;">
+</div>
+
+<script>
+    const btn = document.getElementById('chatbot-btn');
+    const box = document.getElementById('chatbot-box');
+    const input = document.getElementById('chatbot-input');
+    const messages = document.getElementById('chatbot-messages');
+
+    btn.onclick = () => box.style.display = (box.style.display === "none" ? "block" : "none");
+
+    input.addEventListener("keypress", function(e) {
+        if (e.key === "Enter") {
+            let userMsg = input.value;
+            messages.innerHTML += `<div><b>You:</b> ${userMsg}</div>`;
+            
+            // Simple FAQ bot
+            let reply = "Sorry, I don’t understand.";
+            if (userMsg.toLowerCase().includes("hi") || userMsg.toLowerCase().includes("hello"))  reply = "Hi 👋! Welcome to IT Solution. How can I help you today?";
+            if (userMsg.toLowerCase().includes("help"))  reply = "Sure! You can ask me about our services, contact details, or company info.";
+            if (userMsg.toLowerCase().includes("service")) reply = "We provide software development, eLearning, and digital consultancy.";
+            if (userMsg.toLowerCase().includes("contact")) reply = "You can contact us via email: info@itsolution.com or call +94 77 123 4567.";
+            if (userMsg.toLowerCase().includes("about")) reply = "IT Solution (Pvt) Ltd makes learning engaging, efficient, and fun.";
+
+            messages.innerHTML += `<div><b>Bot:</b> ${reply}</div>`;
+            input.value = "";
+            messages.scrollTop = messages.scrollHeight;
+        }
+    });
+</script>
 
     <!-- Footer -->
     <footer>
