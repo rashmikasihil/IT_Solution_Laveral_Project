@@ -111,9 +111,9 @@
 <section id="about" class="container py-5 text-center">
     <!-- Company Logo -->
      <div class="mb-4">
-        <img src="https://logodix.com/logo/1245962.jpg" 
+        <img src="https://www.pngmart.com/files/About-Us-PNG-Isolated-File.png" 
              alt="Company Logo" 
-             style="width: 150px; height: 150px;">
+             style="width: 500px; height: 200px;">
     </div>
 
     <!-- <h2 class="section-title">
@@ -170,7 +170,12 @@
    <!-- Services Section -->
 <section id="services" class="container py-5">
     <h2 class="section-title text-center">
-    <i class="fas fa-cogs me-2"></i>Our Services
+         <div class="mb-4">
+        <img src="https://williamsperformance.net/images/header-our-services.jpg" 
+             alt="Company Logo" 
+             style="width: 500px; height: 100px;">
+    </div>
+    <!-- <i class="fas fa-cogs me-2"></i>Our Services -->
 </h2>
     <div class="row g-4">
         <div class="col-md-4">
@@ -339,7 +344,12 @@ We provide innovative IT solutions tailored to your business needs. Our services
     <!-- Contact Section -->
 <section class="py-5 bg-light" id="contact">
     <div class="container">
-        <h2 class="text-center mb-4">Contact Us</h2>
+         <div class="mb-4">
+        <img src="https://cdn.shopify.com/s/files/1/0263/3957/3865/files/contact-us-buttons-clipart-design-illustration-free-png_1_480x480.webp?v=1721852008" 
+             alt="Company Logo" 
+             style="width: 450px; height: 100px; position: relative; left: 35%;">
+    </div>
+        <!-- <h2 class="text-center mb-4">Contact Us</h2> -->
         <form class="w-50 mx-auto" method="POST" action="{{ route('contact.store') }}">
             @csrf
             <input type="text" name="name" class="form-control mb-3" placeholder="Your Name" required>
