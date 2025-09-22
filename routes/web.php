@@ -5,6 +5,7 @@ use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ChatbotController;
+use App\Http\Controllers\DetailsController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 
@@ -16,6 +17,7 @@ Route::get('/', function () {
 // Add customer page
 Route::resource('customers', CustomerController::class);
 Route::get('/services/more', [ServiceController::class, 'more'])->name('services.more');
+Route::get('/services/detils', [DetailsController::class, 'detil'])->name('services.detils');
 Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
 Route::post('/chatbot', [ChatbotController::class, 'ask']);
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');

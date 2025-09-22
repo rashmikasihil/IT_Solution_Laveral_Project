@@ -288,7 +288,7 @@ We provide innovative IT solutions tailored to your business needs. Our services
     </div>
     <!-- More Services Button -->
     <div class="text-center mt-4">
-        <a href="{{ route('services.more') }}" class="btn btns btn-success btn-lg">
+        <a href="{{ route('services.detils') }}" class="btn btns btn-success btn-lg">
             <i class="fas fa-plus-circle me-2"></i> More Details
         </a>
     </div>
