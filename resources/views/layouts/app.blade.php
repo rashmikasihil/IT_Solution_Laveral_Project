@@ -21,10 +21,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                     <li class="nav-item"><a class="nav-link" href="#contactus">Contact Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#customers">Customers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/#services">Services</a></li>
+                     <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/#contactus">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/#customers">Customers</a></li>
                 </ul>
             </div>
         </div>
